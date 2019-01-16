@@ -1,0 +1,114 @@
+
+
+*{
+  box-sizing: border-box;
+  color: white;
+  font-family: 'futura';
+  font-size: 1.2em;
+
+  text-align: center;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  max-width: 1200px;
+  flex: 1;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.row.is-multiline {
+  flex-wrap: wrap;
+}
+
+.row .col,
+.row .col.is-one-quarter,
+.row .col.is-one-third,
+.row .col.is-one-half,
+.row .col.is-two-thirds,
+.row .col.is-three-quarters{
+  width: 100%;
+}
+
+.row .col{
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+/* *******************MOBILE STYLES****************** */
+
+.row .col.is-one-quarter{
+
+}
+
+.row .col.is-one-third{
+
+  background-color: #444;
+
+  padding: 10px;
+}
+
+.row .col.is-one-half{
+
+  background-color: #000;
+  padding: 10px;
+}
+
+.row .col.is-two-thirds{
+
+}
+
+.row .col.is-three-quarters{
+
+}
+
+
+/* **********************DESKTOP VIEW******************* */
+
+@media screen and (min-aspect-ratio: 16/10){
+  *{
+    font-size: 1em;
+  }
+
+  .row .col{
+    margin-bottom: 1rem;
+  }
+
+  .row .col.is-full{
+    width: 100%;
+    background-color: #000;
+    padding: 10px;
+  }
+
+  .row .col.is-one-quarter{
+    width: 24%;
+  }
+
+  .row .col.is-one-third{
+    width: 32%;
+    padding: 10px;
+  }
+
+  .row .col.is-one-half{
+    width: 49%;
+    padding: 10px;
+  }
+
+  .row .col.is-two-thirds{
+    width: 64%;
+  }
+
+  .row .col.is-three-quarters{
+    width: 72%;
+  }
+
+
+}
