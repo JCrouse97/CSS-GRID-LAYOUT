@@ -30,6 +30,7 @@
 }
 
 .row .col,
+.row .col.is-full,
 .row .col.is-one-quarter,
 .row .col.is-one-third,
 .row .col.is-one-half,
@@ -44,6 +45,11 @@
 }
 
 /* *******************MOBILE STYLES****************** */
+
+.row .col.is-full{
+  background-color: #000;
+  padding: 10px;
+}
 
 .row .col.is-one-quarter{
 
@@ -83,9 +89,6 @@
   }
 
   .row .col.is-full{
-    width: 100%;
-    background-color: #000;
-    padding: 10px;
   }
 
   .row .col.is-one-quarter{
